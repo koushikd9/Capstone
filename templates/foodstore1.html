@@ -1,0 +1,416 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FastDrop</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="{% static 'styles.css' %}" />
+        <link rel="stylesheet" href="{% static 'assets/css/plugins.css'%}">
+    
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css'%}">
+        <script src="{% static 'store.js'%}" async></script>
+        
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png'%}">    
+    </head>
+        
+    <header>
+        <div class="main_header">
+            <!--header top start-->
+            <div class="header_top">
+                <div class="container">  
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="support_info">
+                                <p>Email: <a href="mailto:">fastdrop@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="top_right text-right">
+                                <ul>
+                                   <li><a href="login.html">Login</a></li> 
+                                   <li><a href="checkout.html">Checkout</a></li> 
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header top start-->
+            <!--header middel start-->
+            <div class="header_middle">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="logo">
+                                <a href="index.html"><img src="{% static 'assets/img/logo/logo.png'%}" alt="" ></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-6">
+                            <div class="middel_right">
+                                <div class="search_container">
+                                   <form action="#">
+                                        <div class="search_box">
+                                            <input placeholder="Search product..." type="text">
+                                            <button type="submit">Search</button> 
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="middel_right_info">
+                                    <div class="header_wishlist">
+                                        <a href="#"><img src="{% static 'assets/img/user.png'%}" alt=""></a>
+                                    </div>
+                                    <div class="mini_cart_wrapper">
+                                        <a href="javascript:void(0)"><img src="{% static 'assets/img/shopping-bag.png'%}" alt=""></a>
+                                        <span class="cart_quantity">0</span>
+                                        <!--mini cart-->
+                                         <div class="mini_cart">
+                                            <div class="cart_item">
+                                               <div class="cart_img">
+                                                   <a href="#"><img src="#" alt=""></a>
+                                               </div>
+                                                <div class="cart_info">
+                                                    <a href="#">Product-1</a>
+                                                    <p>Qty: 1 X <span> 60.00 </span></p>    
+                                                </div>
+                                                <div class="cart_remove">
+                                                    <a href="#"><i class="ion-android-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="cart_item">
+                                               <div class="cart_img">
+                                                   <a href="#"><img src="#" alt=""></a>
+                                               </div>
+                                                <div class="cart_info">
+                                                    <a href="#">Product-2</a>
+                                                    <p>Qty: 1 X <span> 60.00 </span></p>   
+                                                </div>
+                                                <div class="cart_remove">
+                                                    <a href="#"><i class="ion-android-close"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="mini_cart_table">
+                                                <div class="cart_total">
+                                                    <span>Sub total:</span>
+                                                    <span class="price">120.00</span>
+                                                </div>
+                                                <div class="cart_total mt-10">
+                                                    <span>sub total+delivery charges:</span>
+                                                    <span class="price">138.00</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="mini_cart_footer">
+                                               <div class="cart_button">
+                                                    <a href="cart.html">View cart</a>
+                                                </div>
+                                                <div class="cart_button">
+                                                    <a href="checkout.html">Checkout</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!--mini cart end-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header middel end-->
+            <!--header bottom satrt-->
+            <div class="main_menu_area">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="main_menu menu_position"> 
+                                <nav>  
+                                    <ul>
+                                        <li><a href="index.html">home</a></li>
+                                        
+                                        <li><a href="#">Products & Services <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="food.html">Food</a></li>
+                                                <li><a href="accessories.html">Accessories</a></li>
+                                                <li><a href="groceries.html">Groceries</a></li>
+                                                <li><a href="clothing.html">Clothing and Foot wear</a></li>
+                                                <li><a href="gadgets.html">Gadgets</a></li>
+                                                <li><a href="services.html">services</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a class="active" href="#">Location <i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li> <a> Guntur </a></li>
+                                                <li> <a> Vijayawada </a></li>
+                                                <li> <a> Mangalagiri </a></li>
+                                                <li> <a> Ongole </a></li>
+                         
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">+Add shop</a></li>
+                                        <li><a href="contact.html"> Contact Us</a></li>
+                                    </ul>  
+                                </nav> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header bottom end-->
+        </div> 
+    </header>
+    <!--header area end-->
+    <body>
+        <header class="main-header">
+            
+            <h1 class="band-name band-name-large"><fastdrop></FastDrop></h1>
+        </header>
+        <section class="container content-section">
+          <p></p>
+            <h2 class="section-header">RRR Chickens</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 1.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.212.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 2.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs149.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 3.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.159.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 4.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.319.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 1.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.192.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 2.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.214.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 3.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.169.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 4.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.319.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 1.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.312.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 2.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.214.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 3.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.359.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="{% static 'Images/Album 4.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.419.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Most Liked</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="{% static 'Images/Shirt.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.359.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="{% static 'Images/Cofee.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.458.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">H-Shirt</span>
+                    <img class="shop-item-image" src="{% static 'Images/Shirt.png'%}">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs.354.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs.0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        
+
+
+        
+            <footer class="footer_widgets">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="widgets_container contact_us">
+                        <div class="footer_logo">
+                            <a href="#"><img src="{% static 'assets/img/logo/logo.png'%}" alt=""></a>
+                        </div>
+                        <div class="footer_contact">
+                            <p>.........................</p>
+                            <p>..........................</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="widgets_container widget_menu">
+                        <h3>Information</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog.html">Delivery Information</a></li>
+                                <li><a href="contact.html">Privacy Policy</a></li>
+                                <li><a href="food.html">Terms & Conditions</a></li>
+                                <li><a href="#">Returns</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="widgets_container widget_menu">
+                        <h3>My Account</h3>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="wishlist.html">Wish List</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="widgets_container newsletter">
+                        <h3>Follow Us</h3>
+                        <div class="footer_social_link">
+                            <ul>
+                                <li><a class="facebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="twitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="instagram" href="#" title="instagram"><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="linkedin" href="#" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="subscribe_form">
+                            <h3>Join Our Newsletter Now</h3>
+                            <form id="mc-form" class="mc-form footer-newsletter" >
+                                <input id="mc-email" type="email" autocomplete="off" placeholder="Your email address..." />
+                                <button id="mc-submit">Subscribe</button>
+                            </form>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts text-centre">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div><!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="copyright_area">
+                            <p> <a href="templateshub.net">@2021 All Rights Reserved</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer_payment text-right">
+                            <a href="#"><img src="{% static 'assets/img/icon/payment.png'%}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </footer>
+    </body>
+</html>
